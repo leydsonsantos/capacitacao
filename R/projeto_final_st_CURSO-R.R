@@ -3,3 +3,7 @@
 # de todos os tipos: gás natural.
 
 
+
+# carregar base de dados --------------------------------------------------
+
+
