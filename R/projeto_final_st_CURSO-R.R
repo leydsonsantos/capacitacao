@@ -16,8 +16,10 @@ setwd("C:/Users/Leydson/Desktop/DSA/learn")
 files <- dir(pattern = "NG_2022.csv$")
 
 dados <- as.tibble(files %>%
-  map_dfr(fread))
+  map_dfr(fread,encoding = "Latin-1"))
 
 dados$Gas_Consumption <- str_replace(dados$Gas_Consumption,",",".")
 
 dados$Gas_Consumption <- as.numeric(dados$Gas_Consumption)
+
+
